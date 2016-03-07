@@ -7,13 +7,12 @@
 [[img/pgt.png]]
 
 * Table of Contents                                        :TOC_4_org:noexport:
- - [[Description][Description]]
+ - [[Decsription][Description]]
  - [[Install][Install]]
  - [[Key bindings][Key bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+Private customizations
 
 * Install
 To use this contribution add it to your =~/.spacemacs=
