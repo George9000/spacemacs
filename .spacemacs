@@ -26,9 +26,16 @@ values."
      auto-completion
      ;; better-defaults
      emacs-lisp
+     erc
      ess
      git
      haskell
+     html
+     (ibuffer :variables
+              ibuffer-group-buffers-by 'nil)
+     (latex :variables
+            TeX-engine 'luatex
+            TeX-PDF-mode t)
      ;; markdown
      org
      osx
@@ -36,7 +43,10 @@ values."
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      pgt
+     shell
+     shell-scripts
      spell-checking
+     sql
      syntax-checking
      themes-megapack
      version-control
@@ -78,7 +88,7 @@ values."
    ;; variable is `emacs' then the `holy-mode' is enabled at startup. `hybrid'
    ;; uses emacs key bindings for vim's insert mode, but otherwise leaves evil
    ;; unchanged. (default 'vim)
-   dotspacemacs-editing-style 'vim
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -87,7 +97,7 @@ values."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner 'nil
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'.
    ;; (default '(recents projects))
